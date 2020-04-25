@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2020_04_18_182238) do
 
   create_table "doses", force: :cascade do |t|
     t.string "description"
-    t.string "string"
     t.bigint "cocktail_id", null: false
     t.bigint "ingredient_id", null: false
     t.datetime "created_at", precision: 6, null: false

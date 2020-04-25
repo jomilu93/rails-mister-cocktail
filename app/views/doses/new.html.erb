@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Dose</title>
+</head>
+<body>
+
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient%>
+  <%= f.button :submit %>
+  <% end %>
+
+</body>
+</html>

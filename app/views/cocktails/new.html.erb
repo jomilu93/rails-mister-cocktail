@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Cocktail</title>
+</head>
+<body>
+
+  <%= simple_form_for @cocktail, class: 'form-group'  do |f| %>
+  <%= f.input :name, class: 'form-group' %>
+  <%= f.button :submit %>
+  <% end %>
+
+</body>
+</html>
